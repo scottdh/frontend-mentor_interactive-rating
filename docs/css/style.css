@@ -172,44 +172,18 @@ select {
 }
 
 body {
-  font-size: var(--fs-400);
+  font-size: var(--fs-300);
   line-height: var(--lh-regular);
   font-family: var(--ff-sans);
   font-weight: var(--fw-regular);
-  color: var(--color-primaryText);
+  color: var(--color-body-text);
 }
 
-h1,
-h2,
-h3,
-h4,
-.h1,
-.h2,
-.h3,
-.h4 {
+h2 {
+  color: var(--color-heading-text);
+  font-size: var(--fs-500);
   font-weight: var(--fw-bold);
-  --flow-space: 1em;
   line-height: var(--lh-tight);
-}
-
-h1,
-.h1 {
-  font-size: var(--fs-1000);
-}
-
-h2,
-.h2 {
-  font-size: var(--fs-800);
-}
-
-h3,
-.h3 {
-  font-size: var(--fs-600);
-}
-
-h4,
-.h4 {
-  font-size: var(--fs-700);
 }
 
 /**
@@ -217,7 +191,7 @@ h4,
  * Applies a margin to sibling elements based on a --flow-space custom property.
  */
 .flow > * + * {
-  margin-top: var(--flow-space, var(--fs-400));
+  margin-top: var(--flow-space, 1rem);
 }
 
 .wrapper {
@@ -227,6 +201,8 @@ h4,
 }
 
 .card {
+  background-color: var(--color-z1);
+  border-radius: 2rem;
   padding: 2rem 1rem;
   max-width: 30rem;
   margin-inline: auto;
@@ -234,14 +210,15 @@ h4,
 
 /* Utilities */
 /* Components */
+/* 
+Andy Bell's Gorko: A tiny, Sass-powered design-token led utility class generator, with handy helpers, that helps you to power your front-ends with a single source of truth.
+
+https://github.com/hankchizljaw/gorko#utility-class-generator
+*/
 /*CORE CONFIG
 This powers everything from utility class generation to breakpoints to enabling/disabling pre-built components/utilities. 
 */
 :root {
-  --color-primaryText: #2d2d2f;
-  --color-z0: #f2f2f3;
-  --color-z1: white;
-  --color-primary: #ff0a74;
   --fs-300: var(--step--1);
   --fs-400: var(--step-0);
   --fs-500: var(--step-1);
@@ -261,54 +238,23 @@ This powers everything from utility class generation to breakpoints to enabling/
   --fw-bold: 700;
 }
 
-:root {
-  --color-primaryText: #2d2d2f;
-  --color-z0: #f2f2f3;
-  --color-z1: white;
-  --color-primary: #ff0a74;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primaryText: #e7e7e9;
-    --color-z0: #2d2d2f;
-    --color-z1: #232325;
-    --color-primary: #b80050;
+    --color-heading-text: white;
+    --color-body-text: #959eac;
+    --color-primary-button_bg--active: #fb7413;
+    --color-primary-button_text--active: white;
+    --color-primary-button_border--active: #fb7413;
+    --color-primary-button_bg: transparent;
+    --color-primary-button_text: #959eac;
+    --color-primary-button_border: #959eac;
+    --color-rating_bg: #7c8798;
+    --color-rating_text: #1f252e;
+    --color-z0: #121417;
+    --color-z1: #1f252e;
   }
 }
 /* GORKO: auto-generated utility classes start */
-.bg-primaryText {
-  background: var(--color-primaryText);
-}
-
-.bg-z0 {
-  background: var(--color-z0);
-}
-
-.bg-z1 {
-  background: var(--color-z1);
-}
-
-.bg-primary {
-  background: var(--color-primary);
-}
-
-.color-primaryText {
-  color: var(--color-primaryText);
-}
-
-.color-z0 {
-  color: var(--color-z0);
-}
-
-.color-z1 {
-  color: var(--color-z1);
-}
-
-.color-primary {
-  color: var(--color-primary);
-}
-
 .ff-sans {
   font-family: var(--ff-sans);
 }
@@ -949,3 +895,6 @@ This powers everything from utility class generation to breakpoints to enabling/
   }
 }
 /* GORKO: auto-generated utility classes end */
+body {
+  background-color: var(--color-z0);
+}

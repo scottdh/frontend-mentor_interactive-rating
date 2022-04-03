@@ -11,3 +11,7 @@
 
 @import "./config";
 @import "../../node_modules/gorko/gorko.scss";
+
+body {
+  background-color: var(--color-z0);
+}
