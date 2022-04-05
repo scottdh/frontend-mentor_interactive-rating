@@ -31,19 +31,36 @@
     <main class="flow">
       <!-- Rating state start -->
       <article class="card flow">
+        <img src="./images/icon-star.svg" alt="A star icon" />
         <h2>How did we do?</h2>
         <p>
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <ol>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-        </ol>
-        <button>Submit</button>
+        <div class="rating-scale">
+          <label>
+            <input type="radio" name="radio" />
+            1
+          </label>
+          <label>
+            <input type="radio" name="radio" style="--counter: '2'" />
+            2
+          </label>
+          <label>
+            <input type="radio" name="radio" style="--counter: '3'" />
+            3
+          </label>
+          <label>
+            <input type="radio" name="radio" style="--counter: '4'" />
+            4
+          </label>
+          <label>
+            <input type="radio" name="radio" style="--counter: '5'" />
+            5
+          </label>
+        </div>
+
+        <button data-width="full">Submit</button>
       </article>
 
       <!-- Rating state end -->
