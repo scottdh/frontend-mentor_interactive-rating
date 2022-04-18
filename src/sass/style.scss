@@ -5,6 +5,7 @@
 /* Utilities */
 @use "./utilities/flow";
 @use "./utilities/wrapper";
+@use "./utilities/sr-only";
 
 /* Components */
 @use "./components/card";
@@ -16,4 +17,15 @@
 
 body {
   background-color: var(--color-z0);
+}
+
+.icon-star {
+  color: currentColor;
+  width: 3em;
+  height: 3em;
+  background-color: var(--color-rating_bg);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

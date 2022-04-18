@@ -1,7 +1,7 @@
 .card {
   background-color: var(--color-z1);
-  border-radius: 2rem;
-  padding: 2rem 1rem;
+  border-radius: 2em;
+  padding: var(--fs-700);
   max-width: 30rem;
   margin-inline: auto;
 }

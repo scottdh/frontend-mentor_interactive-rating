@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   input[type="radio"] {
+    /* Technique is a twist on: https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
+
     /* Add if not using autoprefixer */
     -webkit-appearance: none;
     appearance: none;
@@ -11,24 +13,32 @@
     margin: 0;
     font: inherit;
     color: currentColor;
-    width: 3rem;
-    height: 3rem;
-    background-color: pink;
+    width: 3em;
+    height: 3em;
+    background-color: var(--color-rating_bg);
     border-radius: 50%;
     position: relative;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-primary);
+      color: #fff;
+      background-color: var(--color-rating_bg--hover);
+    }
+
+    &:checked {
+      transform: scale(1);
+      transition: 120ms transform ease-in-out;
+
+      background-color: var(--color-primary);
+      color: #fff;
+    }
 
     &::before {
       content: var(--counter, "1");
       position: absolute;
+      top: 25%;
+      left: 40%;
     }
   }
-  //   label {
-  //     display: flex;
-  //     justify-content: center;
-  //     align-content: center;
-  //     background-color: var(--color-rating_bg);
-  //     width: 3rem;
-  //     height: 3rem;
-  //     border-radius: 50%;
-  //   }
 }

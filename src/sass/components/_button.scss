@@ -8,7 +8,7 @@ button,
   color: var(--color-button_text);
   background-color: transparent;
   line-height: 1.3; // must be same as form field
-  border-radius: 0.25em; // must be same as form field
+  border-radius: 2em; // must be same as form field
   transition: background-color 0.25s;
   @media (hover: hover) and (pointer: fine) {
     &:hover {

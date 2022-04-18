@@ -29,14 +29,15 @@ $color-palette: (
   "orange": hsla(25, 97%, 53%, 1),
   "white": hsla(0, 0%, 100%, 1),
   "grey-light": hsla(217, 12%, 63%, 1),
-  "grey-medium": hsla(216, 12%, 54%, 1),
-  "blue-darker": hsla(216, 19%, 15%, 1),
-  "blue-darkest": hsla(216, 12%, 8%, 1),
+  "grey-medium": hsla(215, 18%, 19%, 1),
+  "blue-darker": hsla(215, 21%, 16%, 1),
+  "blue-darkest": hsla(255, 10%, 9%, 1),
 );
 
 $light-colors: ();
 
 $dark-colors: (
+  "primary": map-get($color-palette, "orange"),
   "heading-text": map-get($color-palette, "white"),
   "body-text": map-get($color-palette, "grey-light"),
   "button_bg": transparent,
@@ -52,6 +53,7 @@ $dark-colors: (
   "primary-button_text--hover": map-get($color-palette, "white"),
   "primary-button_border--hover": map-get($color-palette, "orange"),
   "rating_bg": map-get($color-palette, "grey-medium"),
+  "rating_bg--hover": map-get($color-palette, "grey-light"),
   "rating_text": map-get($color-palette, "blue-darker"),
   "z0": map-get($color-palette, "blue-darkest"),
   "z1": map-get($color-palette, "blue-darker"),
@@ -81,7 +83,7 @@ $gorko-config: (
       //   "tokens": (
       //     "color": $dark-colors,
       //   ),
-      // ),,,,,,,,,,,,,,,,,,,,,,,,,,
+      // ),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
     ),
     "fs": $gorko-size-scale,
     "ff": (
