@@ -307,6 +307,13 @@ https://github.com/hankchizljaw/gorko#utility-class-generator
 This powers everything from utility class generation to breakpoints to enabling/disabling pre-built components/utilities. 
 */
 :root {
+  --color-primary: #fb7413;
+  --color-z0: #959eac;
+  --color-z1: white;
+  --color-rating_bg: #959eac;
+  --color-rating_bg--hover: #282f39;
+  --color-rating_text: #202731;
+  --color-button_bg--hover: #fb7413;
   --fs-300: var(--step--1);
   --fs-400: var(--step-0);
   --fs-500: var(--step-1);
@@ -324,6 +331,29 @@ This powers everything from utility class generation to breakpoints to enabling/
   --lh-regular: 1.5;
   --fw-regular: 500;
   --fw-bold: 700;
+}
+
+:root {
+  --color-primary: #fb7413;
+  --color-heading-text: white;
+  --color-body-text: #959eac;
+  --color-button_bg: transparent;
+  --color-button_text: #959eac;
+  --color-button_border: #959eac;
+  --color-button_bg--hover: #282f39;
+  --color-button_text--hover: #959eac;
+  --color-button_border--hover: #959eac;
+  --color-primary-button_bg: #fb7413;
+  --color-primary-button_text: white;
+  --color-primary-button_border: #fb7413;
+  --color-primary-button_bg--hover: #fb7413;
+  --color-primary-button_text--hover: white;
+  --color-primary-button_border--hover: #fb7413;
+  --color-rating_bg: #282f39;
+  --color-rating_bg--hover: #959eac;
+  --color-rating_text: #202731;
+  --color-z0: #161519;
+  --color-z1: #202731;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -350,7 +380,86 @@ This powers everything from utility class generation to breakpoints to enabling/
     --color-z1: #202731;
   }
 }
+[data-theme=dark] {
+  --color-primary: #fb7413;
+  --color-heading-text: white;
+  --color-body-text: #959eac;
+  --color-button_bg: transparent;
+  --color-button_text: #959eac;
+  --color-button_border: #959eac;
+  --color-button_bg--hover: #282f39;
+  --color-button_text--hover: #959eac;
+  --color-button_border--hover: #959eac;
+  --color-primary-button_bg: #fb7413;
+  --color-primary-button_text: white;
+  --color-primary-button_border: #fb7413;
+  --color-primary-button_bg--hover: #fb7413;
+  --color-primary-button_text--hover: white;
+  --color-primary-button_border--hover: #fb7413;
+  --color-rating_bg: #282f39;
+  --color-rating_bg--hover: #959eac;
+  --color-rating_text: #202731;
+  --color-z0: #161519;
+  --color-z1: #202731;
+}
+
 /* GORKO: auto-generated utility classes start */
+.bg-primary {
+  background: var(--color-primary);
+}
+
+.bg-z0 {
+  background: var(--color-z0);
+}
+
+.bg-z1 {
+  background: var(--color-z1);
+}
+
+.bg-rating_bg {
+  background: var(--color-rating_bg);
+}
+
+.bg-rating_bg--hover {
+  background: var(--color-rating_bg--hover);
+}
+
+.bg-rating_text {
+  background: var(--color-rating_text);
+}
+
+.bg-button_bg--hover {
+  background: var(--color-button_bg--hover);
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-z0 {
+  color: var(--color-z0);
+}
+
+.color-z1 {
+  color: var(--color-z1);
+}
+
+.color-rating_bg {
+  color: var(--color-rating_bg);
+}
+
+.color-rating_bg--hover {
+  color: var(--color-rating_bg--hover);
+}
+
+.color-rating_text {
+  color: var(--color-rating_text);
+}
+
+.color-button_bg--hover {
+  color: var(--color-button_bg--hover);
+}
+
 .ff-sans {
   font-family: var(--ff-sans);
 }
